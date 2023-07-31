@@ -1,8 +1,12 @@
+# downloads
+downloads/
+
 # libs
 libs/tensorflow/lib
 libs/tensorflow/include
 libs/tensorflow/LICENSE
 libs/tensorflow/THIRD_PARTY_TF_C_LICENSES
+libs/*
 
 # examples
 example_*/bin/*

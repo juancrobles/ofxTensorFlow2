@@ -42,8 +42,10 @@ DOWNLOAD="$MODELS"
 # $1: root folder share link URL
 # $2: filename
 download() {
+#	local path="download?path=%2F&files=$2"
 	local path="download?path=%2F&files=$2"
-	RETCODE=$(curl -LO -w "%{http_code}" $URL/$path)
+	echo $path
+	RETCODE=$(curl -L -w "%{http_code}" $URL/$path -o $path)
 	if [ "$RETCODE" != "200" ] ; then
 		echo "download failed: HTTP $RETCODE"
 		rm -rf $path
