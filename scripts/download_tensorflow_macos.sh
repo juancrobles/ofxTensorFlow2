@@ -28,20 +28,11 @@ TF_X86_64_FILE=libtensorflow-${TYPE}-${OS}-${ARCH}-${VER}.${EXT}
 TFMETAL_X86_64_URL=https://files.pythonhosted.org/packages/7f/17/a2a2ac269e00032b722efbbbee2924f77d93857f2773edded9829faeeaec/
 TFMETAL_X86_64_FILE=tensorflow_metal-0.5.1-cp310-cp310-macosx_12_0_x86_64.whl
 
-# TF_ARM64_URL=https://files.pythonhosted.org/packages/77/29/b3a46ade07623f29d64cb43433aa1c6ba2bfe7419daee76f0cc9a6f7213a/
-# TF_ARM64_FILE=tensorflow_macos-2.13.0-cp310-cp310-macosx_12_0_arm64.whl
+TF_ARM64_URL=https://files.pythonhosted.org/packages/77/29/b3a46ade07623f29d64cb43433aa1c6ba2bfe7419daee76f0cc9a6f7213a/
+TF_ARM64_FILE=tensorflow_macos-2.13.0-cp310-cp310-macosx_12_0_arm64.whl
 
-# TFMETAL_ARM64_URL=https://files.pythonhosted.org/packages/f3/3d/0796dda099a84e166aacb493f8a161c8816175e514e79012b940364787d4/
-# TFMETAL_ARM64_FILE=tensorflow_metal-1.0.1-cp310-cp310-macosx_12_0_arm64.whl
-
-# https://files.pythonhosted.org/packages/47/09/13518855221f421241e973bd462e87ea806a51738c577f4ca33a26b718b8/tensorflow_macos-2.11.0-cp310-cp310-macosx_12_0_arm64.whl
-# https://files.pythonhosted.org/packages/e6/07/5f4ab135894225884e88bef51c93e64e0958dbacf7811bb3dcaee270fe90/tensorflow_metal-0.7.1-cp310-cp310-macosx_12_0_arm64.whl
-
-TF_ARM64_URL=https://files.pythonhosted.org/packages/47/09/13518855221f421241e973bd462e87ea806a51738c577f4ca33a26b718b8/
-TF_ARM64_FILE=tensorflow_macos-2.11.0-cp310-cp310-macosx_12_0_arm64.whl
-
-TFMETAL_ARM64_URL=https://files.pythonhosted.org/packages/e6/07/5f4ab135894225884e88bef51c93e64e0958dbacf7811bb3dcaee270fe90/
-TFMETAL_ARM64_FILE=tensorflow_metal-0.7.1-cp310-cp310-macosx_12_0_arm64.whl
+TFMETAL_ARM64_URL=https://files.pythonhosted.org/packages/f3/3d/0796dda099a84e166aacb493f8a161c8816175e514e79012b940364787d4/
+TFMETAL_ARM64_FILE=tensorflow_metal-1.0.1-cp310-cp310-macosx_12_0_arm64.whl
 
 DEST=libs
 DEST2=libs/tensorflow
