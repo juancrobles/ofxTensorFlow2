@@ -98,9 +98,7 @@ unzip -o downloads/${TFMETAL_ARM64_FILE} tensorflow-plugins/libmetal_plugin.dyli
 # copy libmetal python dependencies
 unzip -o downloads/${TF_ARM64_FILE} tensorflow/python/_pywrap_tensorflow_internal.so -d $DEST/python
 
-mkdir -p $DEST/python/tsl/python/lib/core
-unzip -o downloads/${TF_ARM64_FILE} tensorflow/tsl/python/lib/core/libbfloat16.so.so -d $DEST/python/tsl/python/lib/core
-
+unzip -o downloads/${TF_ARM64_FILE} tensorflow/tsl/python/lib/core/libbfloat16.so.so -d $DEST/python
 
 # copy x86_64 libraries for compatibility
 
