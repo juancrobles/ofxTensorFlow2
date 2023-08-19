@@ -93,23 +93,23 @@ echo "extracting tensorflow x86_64 libraries"
 mkdir -p libs/$SRC
 ## unzip -o downloads/${TF_X86_64_FILE} tensorflow/libtensorflow_framework.dylib tensorflow/include/tensorflow* -d $DEST/x86_64
 ##tar -xvf downloads/${TF_X86_64_FILE} -C libs/$SRC
-# unzip -o downloads/${TF_X86_64_FILE} tensorflow/libtensorflow_framework.2.dylib tensorflow/libtensorflow_cc.2.dylib tensorflow/include/tensorflow* -d $DEST/x86_64
+unzip -o downloads/${TF_X86_64_FILE} tensorflow/libtensorflow_framework.2.dylib tensorflow/libtensorflow_cc.2.dylib tensorflow/include/tensorflow* -d $DEST/x86_64
 
-# unzip -o downloads/${TFMETAL_X86_64_FILE} tensorflow-plugins/libmetal_plugin.dylib -d $DEST/x86_64
+unzip -o downloads/${TFMETAL_X86_64_FILE} tensorflow-plugins/libmetal_plugin.dylib -d $DEST/x86_64
 
-# unzip -o downloads/${TF_X86_64_FILE} tensorflow/python/_pywrap_tensorflow_internal.so -d $DEST/x86_64/python
+unzip -o downloads/${TF_X86_64_FILE} tensorflow/python/_pywrap_tensorflow_internal.so -d $DEST/x86_64/python
 
-# unzip -o downloads/${TF_X86_64_FILE} tensorflow/tsl/python/lib/core/libbfloat16.so.so -d $DEST/x86_64/python
+unzip -o downloads/${TF_X86_64_FILE} tensorflow/tsl/python/lib/core/libbfloat16.so.so -d $DEST/x86_64/python
 
-# echo "extracting tensorflow arm64 libraries"
-# unzip -o downloads/${TF_ARM64_FILE} tensorflow/libtensorflow_framework.2.dylib tensorflow/libtensorflow_cc.2.dylib tensorflow/include/tensorflow* -d $DEST/arm64
+echo "extracting tensorflow arm64 libraries"
+unzip -o downloads/${TF_ARM64_FILE} tensorflow/libtensorflow_framework.2.dylib tensorflow/libtensorflow_cc.2.dylib tensorflow/include/tensorflow* -d $DEST/arm64
 
-# unzip -o downloads/${TFMETAL_ARM64_FILE} tensorflow-plugins/libmetal_plugin.dylib -d $DEST/arm64
+unzip -o downloads/${TFMETAL_ARM64_FILE} tensorflow-plugins/libmetal_plugin.dylib -d $DEST/arm64
 
-# # copy libmetal python dependencies
-# unzip -o downloads/${TF_ARM64_FILE} tensorflow/python/_pywrap_tensorflow_internal.so -d $DEST/arm64/python
+# copy libmetal python dependencies
+unzip -o downloads/${TF_ARM64_FILE} tensorflow/python/_pywrap_tensorflow_internal.so -d $DEST/arm64/python
 
-# unzip -o downloads/${TF_ARM64_FILE} tensorflow/tsl/python/lib/core/libbfloat16.so.so -d $DEST/arm64/python
+unzip -o downloads/${TF_ARM64_FILE} tensorflow/tsl/python/lib/core/libbfloat16.so.so -d $DEST/arm64/python
 
 ## Build xcframeworks
 ## libtensor_cc
